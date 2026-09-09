@@ -127,7 +127,7 @@ const personajes = [
     id: 4,
       nombre: "William Edwards Deming",
       resumen: "Fue un estadístico, profesor universitario, autor y consultor estadounidense considerado mundialmente como el padre de la gestión de la calidad moderna...",
-      imagen: "imagenes/",
+      imagen: "imagenes/William Edwards Deming.png",
       biografiaCompleta: `
       <h3>1. Primeros Años y Formación</h3>
       <p>William Edwards Deming (1900–1993) nació en Sioux City, Iowa. Se graduó en Ingeniería Eléctrica por la Universidad de Wyoming y obtuvo un doctorado en Física Matemática por la Universidad de Yale en 1928.</p>
