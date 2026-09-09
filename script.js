@@ -126,7 +126,7 @@ const personajes = [
     {
     id: 4,
       nombre: "William Edwards Deming",
-      resumen: "fue un estadístico, profesor universitario, autor y consultor estadounidense considerado mundialmente como el padre de la gestión de la calidad moderna...",
+      resumen: "Fue un estadístico, profesor universitario, autor y consultor estadounidense considerado mundialmente como el padre de la gestión de la calidad moderna...",
       imagen: "imagenes/",
       biografiaCompleta: `
       <h3>1. Primeros Años y Formación</h3>
