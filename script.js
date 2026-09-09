@@ -163,7 +163,9 @@ const personajes = [
       </ul>
     `
     },
-];
+      
+    ];
+
 
 
 // 1. CARGA AUTOMÁTICA EN LA PÁGINA PRINCIPAL (index.html)
@@ -188,10 +190,39 @@ if (contenedorLista) {
 
     contenedorLista.appendChild(fila);
   });
+
+  // Tarjeta de Referencias Bibliográficas (sin imagen y con título)
+  const filaBiblio = document.createElement("article");
+  filaBiblio.classList.add("fila-personaje");
+
+  filaBiblio.innerHTML = `
+    <div class="info-personaje" style="flex: 1; width: 100%;">
+      <h2 class="nombre-personaje">Referencias bibliográficas</h2>
+      <div class="lista-citas-texto">
+        <p class="item-biblio">American Society for Quality. (s. f.). Walter A. Shewhart. https://asq.org/about-asq/honorary-members/shewhart</p>
+        
+        <p class="item-biblio">Imai, M. (1986). <em>Kaizen: The key to Japan’s competitive success</em>. McGraw-Hill.</p>
+        
+        <p class="item-biblio">Kaizen Institute. (2023, 13 de junio). <em>Kaizen Institute announces the passing of its founder, Masaaki Imai</em>. https://kaizen.com/news/kaizen-institute-annouces-passing-of-founder-masaaki-imai/</p>
+        
+        <p class="item-biblio">Kaizen Institute. (s. f.). <em>Masaaki Imai</em>. https://kaizen.com/masaaki-imai/</p>
+        
+        <p class="item-biblio">ScienceDirect. (2005). Walter Andrew Shewhart, <em>Economic control of quality of manufactured product (1931)</em>. En <em>Landmark writings in Western mathematics 1640–1940</em> (pp. 926–935). Elsevier. https://doi.org/10.1016/B978-044450871-3/50153-4</p>
+        
+        <p class="item-biblio">Shewhart, W. A. (1931). <em>Economic control of quality of manufactured product</em>. D. Van Nostrand Company.</p>
+        
+        <p class="item-biblio">Shewhart, W. A. (1939). <em>Statistical method from the viewpoint of quality control</em>. Graduate School, U.S. Department of Agriculture.</p>
+        
+        <p class="item-biblio">https://www.uv.mx/personal/mojeda/files/2012/04/Deming_LaRevoluciondelacalidad.pdf</p>
+        
+        <p class="item-biblio">https://www.ingenieriadecalidad.com/2023/02/joseph-juran-aportes-a-la-calidad.html</p>
+      </div>
+    </div>
+  `;
+
+  contenedorLista.appendChild(filaBiblio);
 }
 
-
-// 2. DETALLE DINÁMICO EN LA PÁGINA INDIVIDUAL (personaje.html)
 
 const contenedorDetalle = document.getElementById("detalle-personaje");
 

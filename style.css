@@ -239,3 +239,19 @@ body {
   line-height: 1.6;
   margin-bottom: 8px;
 }
+
+.lista-citas-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 250px;
+  overflow-y: auto; 
+  padding-right: 12px;
+}
+
+.item-biblio {
+  font-size: 0.88rem;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+  word-break: break-word; 
+}
