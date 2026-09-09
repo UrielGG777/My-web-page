@@ -92,7 +92,7 @@ const personajes = [
     id: 3,
     nombre: "Joseph Juran",
     resumen: "Fue un ingeniero y consultor  administrativo y empresarial que revolucionó los conceptos alrededor...",
-    imagen: "imagenes/",
+    imagen: "imagenes/Joseph Juran.png",
     biografiaCompleta: `
       <h3>1. Biografía y Formación</h3>
       <p>Joseph Juran (1904–2008) nació en Braila, Rumania, y a corta edad emigró con su familia a Minnesota, Estados Unidos. Se graduó como ingeniero eléctrico en la Universidad de Minnesota en 1924 y comenzó su carrera en una filial de <strong>Western Electric</strong>, donde ingresó al comité de supervisión estadística.</p>
