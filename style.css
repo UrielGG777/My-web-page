@@ -46,13 +46,12 @@ body {
 }
 
 .logo-header {
-  height: 52px;
+  height: 92px;
   object-fit: contain;
-  transition: transform 0.2s;
 }
 
 .logo-header:hover {
-  transform: scale(1.05);
+  transform: none
 }
 
 .titulo-principal {
