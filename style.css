@@ -1,0 +1,241 @@
+:root {
+  --color-primario: #0f284e;       /* Azul marino institucional */
+  --color-acento: #2563eb;         /* Azul vibrante */
+  --color-fondo: #f1f5f9;          /* Gris claro suave */
+  --color-tarjeta: #ffffff;
+  --color-texto: #1e293b;
+  --color-texto-secundario: #64748b;
+  --sombra-suave: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --sombra-hover: 0 12px 25px rgba(37, 99, 235, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  /* Degradado sutil con textura en el fondo */
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--color-texto);
+  min-height: 100vh;
+}
+
+/* Header con fondo blanco pulido y sombra flotante */
+.header-institucional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background-color: #ffffff;
+  border-bottom: 4px solid var(--color-primario);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-box, .header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-header {
+  height: 52px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.logo-header:hover {
+  transform: scale(1.05);
+}
+
+.titulo-principal {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--color-primario);
+  border-left: 4px solid var(--color-acento);
+  padding-left: 14px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-primario);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-primario);
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--color-primario);
+  color: #ffffff;
+}
+
+/* Contenedor central */
+.contenedor-principal {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Tarjetas de Personajes (en lugar de filas planas) */
+.fila-personaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-tarjeta);
+  border-radius: 16px;
+  padding: 28px 36px;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-left: 6px solid var(--color-acento);
+  gap: 36px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fila-personaje:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-hover);
+}
+
+.info-personaje {
+  flex: 1.2;
+}
+
+.nombre-personaje {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+.resumen-personaje {
+  font-size: 1rem;
+  color: var(--color-texto-secundario);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* Botón estilo píldora con microinteracción */
+.btn-mas-info {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-mas-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.45);
+}
+
+.imagen-contenedor {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-personaje {
+  width: 100%;
+  max-width: 420px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Tarjetas de Integrantes */
+.grid-integrantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-integrante {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--sombra-suave);
+  border-top: 4px solid var(--color-acento);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-integrante:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta-integrante img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid var(--color-fondo);
+  outline: 2px solid var(--color-acento);
+}
+
+.tarjeta-integrante h3 {
+  font-size: 1.15rem;
+  color: var(--color-primario);
+  margin-bottom: 6px;
+}
+
+.tarjeta-integrante p {
+  font-size: 0.88rem;
+  color: var(--color-texto-secundario);
+}
+/* Estilos específicos para la vista detallada */
+.detalle-layout {
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.sticky-foto {
+  position: sticky;
+  top: 100px; /* La foto se queda flotando en el lateral mientras lees */
+}
+
+.contenido-biografia h3 {
+  color: var(--color-primario);
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 4px;
+}
+
+.contenido-biografia p {
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.contenido-biografia ul {
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+
+.contenido-biografia li {
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
