@@ -85,9 +85,9 @@ const personajes = [
     icono: "fa-solid fa-arrows-spin",
     concepto: "Ciclo PHVA",
     carpeta: "Edward Deming",
-    imgPremios: "imagenes/Edward Deming/White Modern Project Timeline Flyer (3).png",
+    imgPremios: "imagenes/Edward Deming/White Modern Project Timeline Flyer (4).png",
     imgLinea: "imagenes/Edward Deming/White Modern Project Timeline Flyer (2).png",
-    imgEsquema: "imagenes/Edward Deming/White Modern Project Timeline Flyer (4).png",
+    imgEsquema: "imagenes/Edward Deming/White Modern Project Timeline Flyer (3).png",
     contexto: "<strong>Segunda Guerra Mundial:</strong> Perfeccionó el Control Estadístico de Procesos (SPC) en la industria militar de EE. UU.<br><br><strong>Milagro Económico Japonés (1950s):</strong> Convocado por la JUSE, capacitó a ingenieros y ejecutivos en Japón. Enseñó a mejorar la calidad del proceso para reducir costos y aumentar la productividad, convirtiendo a empresas como Toyota y Sony en potencias mundiales.",
     obras: [
       "<strong>Out of the Crisis (1982):</strong> Presenta los 14 puntos de gestión y las '7 enfermedades mortales' de la gerencia tradicional.",
@@ -109,9 +109,9 @@ const personajes = [
     icono: "fa-solid fa-circle-check",
     concepto: "Cero Defectos",
     carpeta: "Philip b. crossby",
-    imgPremios: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (3).png",
+    imgPremios: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (4).png",
     imgLinea: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (2).png",
-    imgEsquema: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (4).png",
+    imgEsquema: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (3).png",
     contexto: "En los años 60 y 70, las empresas japonesas adoptaron las enseñanzas de calidad de Deming y Juran, superando a las americanas en fiabilidad y costos. Frente a esta crisis de competitividad, Philip B. Crosby introdujo en 1979 su concepto de 'Cero Defectos' y la idea de que prevenir fallas resulta mucho más barato que corregirlas, transformando la gestión empresarial hacia la prevención integral.",
     obras: [
       "<strong>Quality Is Free: The Art of Making Quality Certain (1979):</strong> Su libro más emblemático. Popularizó el concepto de que invertir en prevención genera ahorros mayores que los costos de no tener calidad.",
