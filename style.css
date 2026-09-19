@@ -1,244 +1,223 @@
 :root {
-  --color-primario: #0f284e;       /* Azul marino institucional */
-  --color-acento: #2563eb;         /* Azul vibrante */
-  --color-fondo: #f1f5f9;          /* Gris claro suave */
-  --color-tarjeta: #ffffff;
-  --color-texto: #1e293b;
-  --color-texto-secundario: #64748b;
-  --sombra-suave: 0 4px 15px rgba(0, 0, 0, 0.05);
-  --sombra-hover: 0 12px 25px rgba(37, 99, 235, 0.15);
+  --bg-pagina: #eef4f9;
+  --azul-marino-oscuro: #061c38;
+  --azul-marino-medio: #0b315e;
+  --azul-acento: #0284c7;
+  --azul-boton: #0056b3;
+  --azul-boton-hover: #004494;
+  --blanco: #ffffff;
+  --texto-principal: #0f172a;
+  --texto-secundario: #475569;
+  --gris-borde: #e2e8f0;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background-color: var(--color-fondo);
-  /* Degradado sutil con textura en el fondo */
-  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-  background-size: 24px 24px;
-  color: var(--color-texto);
+  background-color: var(--bg-pagina);
+  color: var(--texto-principal);
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
 }
 
-/* Header con fondo blanco pulido y sombra flotante */
-.header-institucional {
+/* =============================================================
+   1. ENCABEZADO INSTITUCIONAL HERO
+   ============================================================= */
+.hero-header {
+  background: linear-gradient(135deg, var(--azul-marino-oscuro) 0%, var(--azul-marino-medio) 100%);
+  color: var(--blanco);
+  padding: 24px 45px 45px 45px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  background: url('imagenes/logo-instituto.png') no-repeat center right;
+  background-size: contain;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 48px;
-  background-color: #ffffff;
-  border-bottom: 4px solid var(--color-primario);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding-bottom: 20px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.logo-box, .header-right {
+.logo-box {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .logo-header {
-  height: 52px;
+  height: 48px;
   object-fit: contain;
+  transition: none;
 }
 
 .logo-header:hover {
-  transform: none
+  transform: none;
 }
+
 .logo-tecnm {
-  height: 95px; /* Ajusta el valor en píxeles si lo quieres aún más grande */
+  height: 68px;
 }
-.titulo-principal {
-  font-size: 1.7rem;
+
+.logo-itcm {
+  height: 58px;
+}
+
+.btn-integrantes-header {
+  color: var(--blanco);
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  padding: 7px 22px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease;
+}
+
+.btn-integrantes-header:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.hero-texto {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.hero-titulo {
+  font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 0.5px;
-  color: var(--color-primario);
-  border-left: 4px solid var(--color-acento);
-  padding-left: 14px;
+  margin-bottom: 6px;
+  color: var(--blanco);
 }
 
-.nav-link {
-  text-decoration: none;
-  color: var(--color-primario);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 8px 18px;
-  border-radius: 8px;
-  border: 1.5px solid var(--color-primario);
-  transition: all 0.2s ease;
+.hero-subtitulo {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #cbd5e1;
 }
 
-.nav-link:hover {
-  background-color: var(--color-primario);
-  color: #ffffff;
-}
-
-/* Contenedor central */
+/* =============================================================
+   2. TARJETAS MODERNAS (3 COLUMNAS - INDEX)
+   ============================================================= */
 .contenedor-principal {
-  max-width: 1100px;
-  margin: 35px auto;
+  max-width: 1050px;
+  margin: 30px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 22px;
 }
 
-/* Tarjetas de Personajes (en lugar de filas planas) */
-.fila-personaje {
-  display: flex;
-  justify-content: space-between;
+.tarjeta-precursor {
+  background: var(--blanco);
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 140px 1fr 150px;
   align-items: center;
-  background-color: var(--color-tarjeta);
-  border-radius: 16px;
-  padding: 28px 36px;
-  box-shadow: var(--sombra-suave);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  border-left: 6px solid var(--color-acento);
-  gap: 36px;
+  padding: 16px 24px;
+  gap: 22px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  border-left: 6px solid var(--azul-acento);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.fila-personaje:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--sombra-hover);
-}
-
-.info-personaje {
-  flex: 1.2;
-}
-
-.nombre-personaje {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--color-primario);
-  margin-bottom: 10px;
-}
-
-.resumen-personaje {
-  font-size: 1rem;
-  color: var(--color-texto-secundario);
-  line-height: 1.6;
-  margin-bottom: 22px;
-}
-
-/* Botón estilo píldora con microinteracción */
-.btn-mas-info {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
-  color: #ffffff;
-  padding: 10px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-  transition: all 0.2s ease;
-}
-
-.btn-mas-info:hover {
+.tarjeta-precursor:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
 }
 
-.imagen-contenedor {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.imagen-personaje {
-  width: 100%;
-  max-width: 420px;
-  height: 240px;
+.col-foto img {
+  width: 130px;
+  height: 130px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* Tarjetas de Integrantes */
-.grid-integrantes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 25px;
-}
-
-.tarjeta-integrante {
-  background: #ffffff;
   border-radius: 14px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: var(--sombra-suave);
-  border-top: 4px solid var(--color-acento);
-  transition: transform 0.2s ease;
+  background-color: #f1f5f9;
+  display: block;
 }
 
-.tarjeta-integrante:hover {
-  transform: translateY(-4px);
-}
-
-.tarjeta-integrante img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid var(--color-fondo);
-  outline: 2px solid var(--color-acento);
-}
-
-.tarjeta-integrante h3 {
-  font-size: 1.15rem;
-  color: var(--color-primario);
+.col-info .nombre-precursor {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--azul-marino-oscuro);
   margin-bottom: 6px;
 }
 
-.tarjeta-integrante p {
+.col-info .resumen-precursor {
   font-size: 0.88rem;
-  color: var(--color-texto-secundario);
-}
-/* Estilos específicos para la vista detallada */
-.detalle-layout {
-  align-items: flex-start; /* Alinea los elementos en la parte superior */
-}
-
-.sticky-foto {
-  position: sticky;
-  top: 100px; /* La foto se queda flotando en el lateral mientras lees */
+  font-weight: 500;
+  color: var(--texto-secundario);
+  line-height: 1.45;
+  margin-bottom: 14px;
 }
 
-.contenido-biografia h3 {
-  color: var(--color-primario);
-  margin-top: 24px;
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 4px;
+.btn-mas-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--azul-boton), #0284c7);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0, 86, 179, 0.25);
+  transition: opacity 0.2s ease;
 }
 
-.contenido-biografia p {
-  color: #334155;
-  line-height: 1.7;
-  margin-bottom: 12px;
+.btn-mas-info:hover {
+  opacity: 0.92;
 }
 
-.contenido-biografia ul {
-  padding-left: 22px;
-  margin-bottom: 18px;
+.col-insignia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid var(--gris-borde);
+  padding-left: 15px;
+  height: 80%;
 }
 
-.contenido-biografia li {
-  color: #334155;
-  line-height: 1.6;
+.col-insignia i {
+  font-size: 2.2rem;
+  color: var(--azul-acento);
   margin-bottom: 8px;
+}
+
+.col-insignia span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--texto-principal);
+  line-height: 1.2;
+}
+
+.tarjeta-bibliografia {
+  grid-template-columns: 1fr !important;
+  border-left-color: var(--azul-marino-oscuro);
 }
 
 .lista-citas-texto {
@@ -246,13 +225,309 @@ body {
   flex-direction: column;
   gap: 10px;
   max-height: 250px;
-  overflow-y: auto; 
+  overflow-y: auto;
   padding-right: 12px;
+  margin-top: 10px;
 }
 
 .item-biblio {
   font-size: 0.88rem;
-  color: var(--color-texto-secundario);
-  line-height: 1.5;
-  word-break: break-word; 
+  font-weight: 500;
+  color: var(--texto-secundario);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+/* =============================================================
+   3. LÍNEA DE TIEMPO INTERCONECTADA (INDEX)
+   ============================================================= */
+.contenedor-timeline {
+  max-width: 1050px;
+  margin: 35px auto 40px auto;
+  padding: 24px 28px 28px 28px;
+  background: linear-gradient(135deg, var(--azul-marino-oscuro) 0%, var(--azul-marino-medio) 100%);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(6, 28, 56, 0.25);
+  color: var(--blanco);
+}
+
+.timeline-titulo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.timeline-barra {
+  display: flex;
+  position: relative;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  gap: 0;
+}
+
+.timeline-nodo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 16px 10px 30px;
+  min-height: 64px;
+  clip-path: polygon(0% 0%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 0% 100%, 16px 50%);
+  margin-left: -12px;
+  transition: filter 0.2s ease;
+  cursor: default;
+}
+
+.timeline-nodo:first-child {
+  margin-left: 0;
+  padding-left: 16px;
+  clip-path: polygon(0% 0%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 0% 100%);
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.timeline-nodo:last-child {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 16px 50%);
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding-right: 20px;
+}
+
+.timeline-nodo:hover {
+  filter: brightness(1.1);
+  z-index: 5;
+}
+
+.nodo-azul    { background: linear-gradient(90deg, #0077c8, #0088e0); }
+.nodo-verde   { background: linear-gradient(90deg, #00a86b, #05be7c); }
+.nodo-naranja { background: linear-gradient(90deg, #f26522, #fa783b); }
+.nodo-morado  { background: linear-gradient(90deg, #7b4397, #8e44ad); }
+.nodo-cian    { background: linear-gradient(90deg, #00b4d8, #00c7be); }
+
+.nodo-avatar-wrapper {
+  width: 44px;
+  height: 44px;
+  background-color: var(--blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.nodo-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.nodo-icono-final {
+  color: #00a896;
+  font-size: 1.15rem;
+}
+
+.nodo-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--blanco);
+  line-height: 1.15;
+}
+
+.nodo-anio {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.nodo-nombre {
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+/* =============================================================
+   4. PIE DE PÁGINA
+   ============================================================= */
+.footer-institucional {
+  background-color: #030f1e;
+  color: #7b93a8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+/* =============================================================
+   5. RESPONSIVIDAD (INDEX)
+   ============================================================= */
+@media (max-width: 860px) {
+  .tarjeta-precursor {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .col-foto img {
+    margin: 0 auto;
+  }
+  .col-insignia {
+    border-left: none;
+    border-top: 1px solid var(--gris-borde);
+    padding-top: 15px;
+    padding-left: 0;
+  }
+  .timeline-barra {
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 8px;
+  }
+  .timeline-nodo,
+  .timeline-nodo:first-child,
+  .timeline-nodo:last-child {
+    clip-path: none;
+    margin-left: 0;
+    border-radius: 12px;
+    padding: 10px 16px;
+  }
+}
+
+/* =============================================================
+   6. FICHA INFOGRÁFICA DE DETALLE (personaje.html)
+   ============================================================= */
+.contenedor-infografia {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 35px 40px;
+  background-color: var(--blanco);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.grid-infografia {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+/* --- COLUMNA IZQUIERDA --- */
+.col-izquierda-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.foto-infografia {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+.capsula-contexto {
+  background-color: #9abfd9;
+  color: #072244;
+  padding: 24px 20px;
+  border-radius: 35px;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.titulo-premios {
+  color: #4a5d89;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Contenedor para la imagen de Premios */
+.banner-premios-img {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* --- COLUMNA DERECHA --- */
+.col-derecha-info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.nombre-principal-info {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #273444;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Contenedor para la imagen horizontal de la Línea de Tiempo */
+.banner-linea-tiempo-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Píldoras de encabezados */
+.pildora-seccion {
+  background: linear-gradient(90deg, #3d4f8f, #4a5ea8);
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(61, 79, 143, 0.25);
+  margin-bottom: 12px;
+}
+
+.bloque-seccion ul {
+  padding-left: 22px;
+}
+
+.bloque-seccion li {
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.bloque-seccion p {
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+/* Contenedor para la imagen del Esquema de Aportaciones */
+.diagrama-resumen-box {
+  margin-top: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Regla universal para las imágenes infográficas */
+.img-infografica-completa {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsividad de la infografía */
+@media (max-width: 900px) {
+  .grid-infografia {
+    grid-template-columns: 1fr;
+  }
 }

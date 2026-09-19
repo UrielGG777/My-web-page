@@ -3,30 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Unidad 1</title>
+  
+  <title>Precursores de la Calidad</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Iconos de Lucide o FontAwesome vía CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  
-  <!-- Encabezado con logos institucionales -->
-  <header class="header-institucional">
-    <div class="logo-box">
-      <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-header logo-tecnm">
-      <img src="imagenes/logo-sep.png" alt="SEP" class="logo-header">
+
+  <!-- Encabezado Hero Institucional -->
+  <header class="hero-header">
+    <div class="header-top">
+      <div class="logo-box">
+        <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-header logo-blanco">
+        <img src="imagenes/logo-sep.png" alt="SEP" class="logo-header logo-blanco">
+        <img src="imagenes/logo-new.png" alt="ITCM" class="logo-header logo-blanco">
+      </div>
+      <div class="header-nav">
+        <a href="integrantes.html" class="btn-integrantes-header">Integrantes</a>
+      </div>
     </div>
 
-    <h1 class="titulo-principal">PRECURSORES DE LA CALIDAD</h1>
-
-    <div class="header-right">
-      <a href="integrantes.html" class="nav-link">Integrantes</a>
-      <img src="imagenes/logo-instituto.png" alt="Logo Escuela" class="logo-header">
+    <div class="hero-texto">
+      <h1 class="hero-titulo">PRECURSORES DE LA CALIDAD</h1>
+      <p class="hero-subtitulo">Su visión sigue presente en cada mejora</p>
     </div>
   </header>
 
-  <!-- Contenedor donde se insertan los 15 personajes -->
+  <!-- Lista dinámica de tarjetas de personajes -->
   <main id="lista-personajes" class="contenedor-principal">
-    <!-- Se llena automáticamente con script.js -->
+    <!-- script.js generará las tarjetas aquí -->
   </main>
+
+  <!-- Línea de tiempo visual -->
+  <section class="contenedor-timeline">
+    <h3 class="timeline-titulo">Línea de tiempo</h3>
+    <div class="timeline-barra">
+      <div class="timeline-nodo nodo-azul">
+
+        <img src="imagenes/walter a shewhart/Walter Andrew Shewhart.png" alt="Shewhart" class="nodo-avatar">
+        <div class="nodo-info">
+          <span class="nodo-anio">1920</span>
+          <span class="nodo-nombre">Shewhart</span>
+        </div>
+      </div>
+      <div class="timeline-nodo nodo-verde">
+        <img src="imagenes/William Edwards Deming.png" alt="Deming" class="nodo-avatar">
+        <div class="nodo-info">
+          <span class="nodo-anio">1950</span>
+          <span class="nodo-nombre">Deming</span>
+        </div>
+      </div>
+      <div class="timeline-nodo nodo-naranja">
+        <img src="imagenes/Joseph Juran.png" alt="Juran" class="nodo-avatar">
+        <div class="nodo-info">
+          <span class="nodo-anio">1950-60</span>
+          <span class="nodo-nombre">Juran</span>
+        </div>
+      </div>
+      <div class="timeline-nodo nodo-morado">
+        <img src="imagenes/Masaaki Imai.png" alt="Imai" class="nodo-avatar">
+        <div class="nodo-info">
+          <span class="nodo-anio">1980</span>
+          <span class="nodo-nombre">Imai</span>
+        </div>
+      </div>
+      <div class="timeline-nodo nodo-cian">
+        <div class="nodo-avatar nodo-icono-final"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <div class="nodo-info">
+          <span class="nodo-anio">Actualidad</span>
+          <span class="nodo-nombre">Mejora Continua</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-institucional">
+    <p>© 2026 | Tecnológico Nacional de México</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

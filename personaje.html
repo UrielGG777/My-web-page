@@ -3,32 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Información del Personaje</title>
+  <title>Detalle del Precursor</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Mismo header institucional -->
-  <header class="header-institucional">
-    <div class="logo-box">
-      <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-header">
-      <img src="imagenes/logo-sep.png" alt="SEP" class="logo-header">
-    </div>
-
-    <h1 class="titulo-principal">PROYECTO UNIDAD 1</h1>
-
-    <div class="header-right">
-      <a href="integrantes.html" class="nav-link">Integrantes</a>
-      <img src="imagenes/logo-instituto.png" alt="Logo Escuela" class="logo-header">
+  <!-- Encabezado Hero Institucional idéntico al Index -->
+  <header class="hero-header">
+    <div class="header-top">
+      <div class="logo-box">
+        <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-header logo-tecnm">
+        <img src="imagenes/logo-sep.png" alt="SEP" class="logo-header">
+        <img src="imagenes/logo-new.png" alt="ITCM" class="logo-header logo-itcm">
+      </div>
+      <div class="header-nav">
+        <a href="index.html" class="btn-integrantes-header">← Volver al inicio</a>
+      </div>
     </div>
   </header>
 
-  <!-- Aquí se inyecta la información del personaje seleccionado -->
-  <main id="detalle-personaje" class="contenedor-principal">
-    <!-- script.js colocará aquí los datos -->
+  <!-- Contenedor Maestro de la Ficha Infográfica -->
+  <main class="contenedor-infografia" id="contenedor-detalle">
+    <!-- script.js inyectará la vista infográfica aquí -->
   </main>
 
-  <!-- Enlazamos el mismo script.js -->
+  <footer class="footer-institucional">
+    <p>© 2026 | Tecnológico Nacional de México</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
