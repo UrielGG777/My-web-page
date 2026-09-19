@@ -271,8 +271,31 @@ const personajes = [
     ],
     aportacionesTexto: "Creación del concepto Control Total de Calidad (TQC), clasificación de los Costos de Calidad (Prevención, Evaluación, Fallas Internas y Fallas Externas) y liderazgo en la ASQ."
   },
-   {
+  {
     id: 12,
+    nombre: "Robert M. Pirsig",
+    resumen: "Filósofo y escritor estadounidense. Aportó una perspectiva humanista y ontológica fundamental sobre el significado intrínseco de la Calidad.",
+    imagen: "imagenes/Robert M. Pirsig/Robert M. Pirsig.jpeg",
+    icono: "fa-solid fa-lightbulb",
+    concepto: "Metafísica de la Calidad",
+    imgPremios: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (4).jpeg",
+    imgLinea: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (2).jpeg",
+    imgEsquema: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (3).jpeg",
+    contexto: "Durante la segunda mitad del siglo XX, Pirsig reflexionó sobre la relación entre las personas, la tecnología, los valores y la búsqueda de la excelencia. Sus ideas cuestionaron la separación estricta entre los aspectos técnicos y humanos de las actividades, proponiendo una visión más amplia de la calidad.",
+    obras: [
+      "<strong>Zen and the Art of Motorcycle Maintenance (1974):</strong> Es su obra más conocida. Combina el relato de un viaje en motocicleta con reflexiones filosóficas sobre la tecnología, los valores, la racionalidad y el concepto de Calidad.",
+      "<strong>Lila: An Inquiry into Morals (1991):</strong> Obra en la que profundizó en sus ideas filosóficas y desarrolló con mayor amplitud su teoría sobre los valores y los patrones de evolución."
+    ],
+    introFilosofia: "La filosofía de la calidad de Robert M. Pirsig, desarrollada en su obra Zen y el arte del mantenimiento de la motocicleta, propone una visión profundamente humanista y metafísica que se aparta de los modelos estadísticos o puramente corporativos tradicionales. Sus pilares fundamentales son:",
+    filosofia: [
+      "<strong>La Calidad como una Realidad Indivisible:</strong> Pirsig argumenta que la calidad no es meramente subjetiva ni totalmente objetiva, sino es una esencia universal que todos reconocemos de forma intuitiva al experimentarla.",
+      "<strong>El Cuidado y la Conexión Humana (Care):</strong> La calidad está intrínsecamente ligada al grado de devoción, atención y respeto que una persona invierte en su labor.",
+      "<strong>La Unión entre lo Clásico y lo Romántico:</strong> Pirsig señala que los conflictos de la modernidad nacen de la separación entre el pensamiento clásico (analítico, lógico y basado en la estructura técnica) y el romántico. La verdadera calidad surge al integrar ambas dimensiones para que la ciencia, la tecnología y el arte humano convivan en equilibrio."
+    ],
+    aportacionesTexto: "La formulación de la Metafísica de la Calidad (MOQ), la reconciliación entre la tecnología y los valores humanos, e inspiración clave en la cultura moderna de ingeniería de software y procesos."
+  },
+  {
+    id: 13,
     nombre: "Peter Senge",
     resumen: "Científico e investigador del MIT. Desarrolló el modelo de la 'Organización Abierta al Aprendizaje' y las 5 disciplinas del pensamiento sistémico.",
     imagen: "imagenes/Peter Senge/Peter Senge.jpeg",
@@ -296,29 +319,6 @@ const personajes = [
       "<strong>La Calidad Nace de la Motivación Intrínseca:</strong> A diferencia de los enfoques que imponen métricas de calidad por decreto o mediante bonos y castigos, la visión de Senge se apoya en el Dominio Personal."
     ],
     aportacionesTexto: "Las 5 Disciplinas del Aprendizaje Organizacional (Dominio Personal, Modelos Mentales, Visión Compartida, Aprendizaje en Equipo y Pensamiento Sistémico) y la fundación de la Society for Organizational Learning (SoL)."
-  },
-  {
-    id: 13,
-    nombre: "Robert M. Pirsig",
-    resumen: "Filósofo y escritor estadounidense. Aportó una perspectiva humanista y ontológica fundamental sobre el significado intrínseco de la Calidad.",
-    imagen: "imagenes/Robert M. Pirsig/Robert M. Pirsig.jpeg",
-    icono: "fa-solid fa-lightbulb",
-    concepto: "Metafísica de la Calidad",
-    imgPremios: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (4).jpeg",
-    imgLinea: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (2).jpeg",
-    imgEsquema: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (3).jpeg",
-    contexto: "Durante la segunda mitad del siglo XX, Pirsig reflexionó sobre la relación entre las personas, la tecnología, los valores y la búsqueda de la excelencia. Sus ideas cuestionaron la separación estricta entre los aspectos técnicos y humanos de las actividades, proponiendo una visión más amplia de la calidad.",
-    obras: [
-      "<strong>Zen and the Art of Motorcycle Maintenance (1974):</strong> Es su obra más conocida. Combina el relato de un viaje en motocicleta con reflexiones filosóficas sobre la tecnología, los valores, la racionalidad y el concepto de Calidad.",
-      "<strong>Lila: An Inquiry into Morals (1991):</strong> Obra en la que profundizó en sus ideas filosóficas y desarrolló con mayor amplitud su teoría sobre los valores y los patrones de evolución."
-    ],
-    introFilosofia: "La filosofía de la calidad de Robert M. Pirsig, desarrollada en su obra Zen y el arte del mantenimiento de la motocicleta, propone una visión profundamente humanista y metafísica que se aparta de los modelos estadísticos o puramente corporativos tradicionales. Sus pilares fundamentales son:",
-    filosofia: [
-      "<strong>La Calidad como una Realidad Indivisible:</strong> Pirsig argumenta que la calidad no es meramente subjetiva ni totalmente objetiva, sino es una esencia universal que todos reconocemos de forma intuitiva al experimentarla.",
-      "<strong>El Cuidado y la Conexión Humana (Care):</strong> La calidad está intrínsecamente ligada al grado de devoción, atención y respeto que una persona invierte en su labor.",
-      "<strong>La Unión entre lo Clásico y lo Romántico:</strong> Pirsig señala que los conflictos de la modernidad nacen de la separación entre el pensamiento clásico (analítico, lógico y basado en la estructura técnica) y el romántico. La verdadera calidad surge al integrar ambas dimensiones para que la ciencia, la tecnología y el arte humano convivan en equilibrio."
-    ],
-    aportacionesTexto: "La formulación de la Metafísica de la Calidad (MOQ), la reconciliación entre la tecnología y los valores humanos, e inspiración clave en la cultura moderna de ingeniería de software y procesos."
   }
 ];
 
