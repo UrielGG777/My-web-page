@@ -3,69 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integrantes del Equipo</title>
+  <title>Integrantes del Equipo | Gestión de la Calidad</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome por si usas iconos en el proyecto -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <style>
+    /* Contenedor central */
+    .contenedor-integrantes {
+      max-width: 1200px;
+      margin: 40px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .encabezado-seccion-equipo {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .encabezado-seccion-equipo h2 {
+      font-size: 1.8rem;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    .encabezado-seccion-equipo p {
+      font-size: 1rem;
+      color: #64748b;
+    }
+
+    /* Cuadrícula responsiva */
     .grid-integrantes {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-      text-align: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+      justify-content: center;
     }
+
+    /* Tarjetas de cada integrante */
+    .tarjeta-integrante {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarjeta-integrante:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 20px -3px rgba(26, 86, 219, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+      border-color: #bfdbfe;
+    }
+
+    /* Imagen circular de perfil */
+    .avatar-wrapper {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 18px;
+    }
+
     .tarjeta-integrante img {
-      width: 160px;
-      height: 160px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 12px;
-      border: 3px solid #1a56db;
+      border: 4px solid #1a56db;
+      box-shadow: 0 4px 10px rgba(26, 86, 219, 0.18);
+      background-color: #f1f5f9;
+    }
+
+    /* Nombres y datos */
+    .tarjeta-integrante h3 {
+      font-size: 1.05rem;
+      color: #0f172a;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 10px;
+      min-height: 42px; /* Alinea los textos aunque un nombre tenga 3 líneas */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .badge-control {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid #dbeafe;
+      letter-spacing: 0.5px;
+    }
+
+    /* Botón de volver al inicio mejor integrado */
+    .nav-btn-inicio {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: #1a56db;
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .nav-btn-inicio:hover {
+      background: #1e40af;
     }
   </style>
 </head>
 <body>
 
+  <!-- Encabezado Institucional -->
   <header class="header-institucional">
     <div class="logo-box">
       <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-header">
       <img src="imagenes/logo-sep.png" alt="SEP" class="logo-header">
-       <img src="imagenes/logo-instituto.png" alt="Instituto Tecnológico de Ciudad Madero" class="logo-header logo-instituto">
-  </div>
+      <img src="imagenes/logo-instituto.png" alt="Instituto Tecnológico de Ciudad Madero" class="logo-header logo-instituto">
     </div>
+    
     <h1 class="titulo-principal">EQUIPO DE TRABAJO</h1>
+    
     <div class="header-right">
-      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="index.html" class="nav-btn-inicio">
+        <i class="fa-solid fa-house"></i> Inicio
+      </a>
       <img src="imagenes/logo-new.png" alt="Logo Escuela" class="logo-header">
     </div>
   </header>
 
-  <main class="contenedor-principal">
+  <!-- Contenido Principal -->
+  <main class="contenedor-integrantes">
+    
+    <div class="encabezado-seccion-equipo">
+      <h2>Estudiantes Participantes</h2>
+      <p>Materia: Gestión de los Sistemas de Calidad</p>
+    </div>
+
     <div class="grid-integrantes">
+      
+      <!-- Integrante 1 -->
       <div class="tarjeta-integrante">
-        <img src="imagenes/ary.jpeg">
+        <div class="avatar-wrapper">
+          <img src="imagenes/ary.jpeg" alt="Calderón Sánchez Aryana" onerror="this.src='https://ui-avatars.com/api/?name=Aryana+Calderon&background=1a56db&color=fff'">
+        </div>
         <h3>Calderón Sánchez Aryana</h3>
-        <p>Número de Control: 23070967</p>
+        <span class="badge-control">No. Control: 23070967</span>
       </div>
+
+      <!-- Integrante 2 -->
       <div class="tarjeta-integrante">
-        <img src="imagenes/integrante2.jpg">
+        <div class="avatar-wrapper">
+          <!-- Coloca el nombre exacto de la foto cuando lo tengas, ej: imagenes/miroslava.jpeg -->
+          <img src="imagenes/Miroslava.jpeg" alt="Nava Zavala Miroslava" onerror="this.src='https://ui-avatars.com/api/?name=Miroslava+Nava&background=1a56db&color=fff'">
+        </div>
         <h3>Nava Zavala Miroslava</h3>
-        <p> Número de Control: 23071133</p>
+        <span class="badge-control">No. Control: 23071133</span>
       </div>
+
+      <!-- Integrante 3 -->
       <div class="tarjeta-integrante">
-        <img src="imagenes/integrante2.jpg">
+        <div class="avatar-wrapper">
+          <img src="imagenes/Itzel.jpeg" alt="González Bautista Itzel Amairany" onerror="this.src='https://ui-avatars.com/api/?name=Itzel+Gonzalez&background=1a56db&color=fff'">
+        </div>
         <h3>González Bautista Itzel Amairany</h3>
-        <p>Número de Control: 23071024</p>
+        <span class="badge-control">No. Control: 23071024</span>
       </div>
+
+      <!-- Integrante 4 -->
       <div class="tarjeta-integrante">
-        <img src="imagenes/integrante2.jpg" >
+        <div class="avatar-wrapper">
+          <img src="imagenes/Ariadna.jpeg" alt="Gómez Garza Ariadna Nefertiti" onerror="this.src='https://ui-avatars.com/api/?name=Ariadna+Gomez&background=1a56db&color=fff'">
+        </div>
         <h3>Gómez Garza Ariadna Nefertiti</h3>
-        <p>Número de Control: 23071013</p>
+        <span class="badge-control">No. Control: 23071013</span>
       </div>
+
+      <!-- Integrante 5 -->
       <div class="tarjeta-integrante">
-        <img src="imagenes/integrante2.jpg">
+        <div class="avatar-wrapper">
+          <img src="imagenes/Victor.jpeg" alt="Medellín Delgado Victor Jeovanni" onerror="this.src='https://ui-avatars.com/api/?name=Victor+Medellin&background=1a56db&color=fff'">
+        </div>
         <h3>Medellín Delgado Victor Jeovanni</h3>
-        <p>Número de Control: 23071640</p>
+        <span class="badge-control">No. Control: 23071640</span>
       </div>
+
     </div>
   </main>
 
