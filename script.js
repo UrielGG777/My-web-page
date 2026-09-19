@@ -10,7 +10,7 @@ const personajes = [
     icono: "fa-solid fa-chart-line",
     concepto: "Control estadístico",
     imgPremios: "imagenes/walter a shewhart/shewhart-premios.png",
-    imgLinea: "imagenes/walter a shewhart/shewhart-linea-tiempo.png",
+    imgLinea: "imagenes/walter a shewhart/shewhart-linea-tiempo.jpg",
     imgEsquema: "imagenes/walter a shewhart/shewhart-esquema.png",
     contexto: "A principios del siglo XX, la producción en masa reveló que la inspección final era costosa e ineficiente. Ante el reto de Bell Labs de reducir fallos en telefonía, Shewhart aplicó la física y la estadística para comprender y controlar la variabilidad.",
     obras: [
@@ -35,64 +35,71 @@ const personajes = [
     imgPremios: "imagenes/Masaaki Imai/imai-premios.png",
     imgLinea: "imagenes/Masaaki Imai/imai-linea-tiempo.png",
     imgEsquema: "imagenes/Masaaki Imai/imai-esquema.png",
-    contexto: "Durante el auge industrial de Japón, Imai analizó el contraste entre la gestión occidental (enfocada en innovaciones bruscas) y el enfoque nipón de pequeños cambios progresivos de bajo costo con la participación de todo el personal.",
+    contexto: "Masaaki Imai impulsó la internacionalización de las prácticas de gestión japonesas tras la Segunda Guerra Mundial. En las décadas de 1950 y 1960, colaboró en la formación de ejecutivos japoneses bajo el modelo industrial de EE. UU. Al presenciar la evolución del milagro económico en su país, sistematizó estas prácticas y fundó el KAIZEN Institute en 1985. ",
     obras: [
-      "<strong>Kaizen: The Key to Japan's Competitive Success (1986):</strong> El texto cumbre que internacionalizó el concepto de mejora continua.",
-      "<strong>Gemba Kaizen (1997):</strong> Enfoque de sentido común y disciplina en el lugar donde ocurre la acción real de trabajo."
+      "<strong>Kaizen: The Key to Japan's Competitive Success (1986):</strong> Libro que introdujo la mejora continua a Occidente para aumentar calidad, productividad y competitividad.",
+      "<strong>Gemba Kaizen (1997):</strong> Desarrolla la importancia de realizar mejoras directamente en el lugar donde ocurre la acción y el trabajo (el Gemba)."
     ],
     filosofia: [
-      "El Kaizen es una filosofía de vida: mejorar todos los días, en todas partes.",
-      "La mejora continua debe ser incremental, de bajo costo y constante.",
-      "El Gemba (lugar de trabajo) es la máxima prioridad gerencial.",
-      "La disciplina y la estandarización mediante 5S son la base de la eficiencia."
+      "La calidad debe buscarse mediante la mejora continua (Kaizen).",
+      "Todos los trabajadores deben involucrarse, desde operarios de línea hasta directivos.",
+      "Los problemas deben identificarse y resolverse directamente desde su origen.",
+      "Eliminación sistemática de actividades y desperdicios que no agregan valor.",
+      "El Gemba (el taller o sitio de trabajo real) es el punto clave para detectar oportunidades de mejora.",
+      "La calidad no recae únicamente en un departamento, sino en toda la empresa."
     ],
-    aportacionesTexto: "Fundador del Kaizen Institute, estandarización de las 5S a escala internacional y desarrollo de la cultura participativa de taller Gemba."
+    aportacionesTexto: "Creación del Kaizen Institute, difusión de la metodología Gemba y estandarización del modelo de las 5S en industrias de manufactura y servicios globales."
   },
-  {
+ {
     id: 3,
     nombre: "Joseph Moses Juran",
-    resumen: "Ingeniero y consultor empresarial rumano-estadounidense que transformó la administración moderna con la Trilogía de la Calidad y el principio de Pareto.",
+    resumen: "Fue un ingeniero y consultor administrativo y empresarial que revolucionó los conceptos alrededor de la administración empresarial y la gestión de calidad en distintos niveles de producción.",
     imagen: "imagenes/Joseph M. Juran/Joseph Juran.png",
     icono: "fa-solid fa-diagram-project",
     concepto: "Trilogía de la Calidad",
     imgPremios: "imagenes/Joseph M. Juran/juran-premios.png",
     imgLinea: "imagenes/Joseph M. Juran/juran-linea-tiempo.png",
     imgEsquema: "imagenes/Joseph M. Juran/juran-esquema.png",
-    contexto: "Frente a quienes creían que la calidad solo dependía del operador en la fábrica, Juran demostró que más del 80% de los defectos se debían a fallas en la planificación de la alta gerencia y enseñó a cuantificar las pérdidas por mala calidad.",
+    contexto: "<strong>Inicios en Western Electric (1920s-1930s):</strong> Trabajó en la planta de Hawthorne, donde integró el control estadístico a la gestión corporativa real.<br><br><strong>Segunda Guerra Mundial:</strong> Se desempeñó como administrador público en Washington D.C., mejorando los procesos de adquisición y logística de suministros bélicos.",
     obras: [
-      "<strong>Quality Control Handbook (1951):</strong> El manual de referencia más consultado a nivel mundial en gestión de calidad.",
-      "<strong>Managerial Breakthrough (1964):</strong> Tratado sobre la superación y el cambio organizacional planificado."
+      "<strong>Quality Control Handbook (1951):</strong> Considerada la 'biblia' de la gestión de calidad mundial, obra de referencia técnica y estratégica que sigue actualizándose.",
+      "<strong>Managerial Breakthrough (1964):</strong> Presenta la metodología formal para lograr mejoras drásticas y continuas dentro de cualquier organización.",
+      "<strong>Juran on Planning for Quality (1988):</strong> Manual detallado sobre cómo diseñar productos y servicios estructurados desde cero para evitar defectos.",
+      "<strong>Architect of Quality (2004):</strong> Su autobiografía, donde repasa la evolución del movimiento global de la calidad durante el siglo XX."
     ],
-    filosofia: [
-      "La calidad consiste en la adecuación al uso y satisfacción del cliente.",
-      "Principio de Pareto: concentrar el esfuerzo en los 'pocos vitales' frente a los 'muchos triviales'.",
-      "La calidad debe planificarse meticulosamente desde la alta dirección.",
-      "La resistencia cultural al cambio es el principal obstáculo para la calidad."
+   filosofia: [
+      "<strong>La Trilogía de Juran:</strong> Su marco fundamental para gestionar la calidad operacional.",
+      "<strong>Planificación de la calidad:</strong> Identificar clientes, determinar sus necesidades y desarrollar procesos capaces de satisfacerlas.",
+      "<strong>Control de la calidad:</strong> Monitorear procesos en tiempo real para corregir variaciones fuera de estándares.",
+      "<strong>Mejora de la calidad:</strong> Superar niveles previos para reducir desperdicios de forma crónica (crear avance o breakthrough).",
+      "<strong>Principio de Pareto (Regla del 80/20):</strong> Fue el primero en aplicar la observación del economista Vilfredo Pareto a la gestión de calidad, acuñando la frase 'los pocos vitales y los muchos triviales' para priorizar los problemas de mayor impacto.",
+      "<strong>Costos de la Calidad:</strong> Clasificó los costos de no tener calidad en prevención, evaluación, fallas internas y fallas externas."
     ],
-    aportacionesTexto: "La Trilogía de Juran (Planificación, Control y Mejora de la Calidad), el enfoque de costos de la no calidad y la fundación del Juran Institute."
+    aportacionesTexto: "La formulación de la Trilogía de la Calidad, la aplicación gerencial de la Regla del 80/20 de Pareto y la creación del Juran Institute para la consultoría de calidad global."
   },
   {
     id: 4,
     nombre: "William Edwards Deming",
-    resumen: "Estadístico y profesor estadounidense, pieza clave en el milagro industrial japonés de posguerra y creador de los 14 Puntos para la Gestión.",
+    resumen: "Fue un estadístico, profesor universitario, autor y consultor estadounidense considerado mundialmente como el padre de la gestión de la calidad moderna.",
     imagen: "imagenes/Edward Deming/William Edwards Deming.png",
     icono: "fa-solid fa-arrows-spin",
     concepto: "Ciclo PHVA",
+    carpeta: "Edward Deming",
     imgPremios: "imagenes/Edward Deming/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Edward Deming/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Edward Deming/White Modern Project Timeline Flyer (4).png",
-    contexto: "Al no encontrar apertura en EE. UU. tras la Segunda Guerra Mundial, Deming viajó a Japón en 1950 invitado por la JUSE para capacitar a altos ejecutivos, revolucionando para siempre la reputación de las manufacturas japonesas.",
+    contexto: "<strong>Segunda Guerra Mundial:</strong> Perfeccionó el Control Estadístico de Procesos (SPC) en la industria militar de EE. UU.<br><br><strong>Milagro Económico Japonés (1950s):</strong> Convocado por la JUSE, capacitó a ingenieros y ejecutivos en Japón. Enseñó a mejorar la calidad del proceso para reducir costos y aumentar la productividad, convirtiendo a empresas como Toyota y Sony en potencias mundiales.",
     obras: [
-      "<strong>Out of the Crisis (1982):</strong> Crítica al sistema de gestión tradicional y formulación de sus 14 principios.",
-      "<strong>The New Economics (1993):</strong> Desarrollo del Sistema de Conocimiento Profundo."
+      "<strong>Out of the Crisis (1982):</strong> Presenta los 14 puntos de gestión y las '7 enfermedades mortales' de la gerencia tradicional.",
+      "<strong>The New Economics (1993):</strong> Desarrolla a fondo el Sistema de Conocimiento Profundo y la importancia de la cooperación sobre la competencia.",
+      "<strong>Some Theory of Sampling (1950):</strong> Texto clave sobre teoría de muestreo estadístico aplicado."
     ],
     filosofia: [
-      "Constancia de propósito hacia la mejora de productos y servicios.",
-      "Eliminar el miedo en la organización para fomentar el trabajo transparente.",
-      "Erradicar las cuotas numéricas y la inspección masiva.",
-      "El 94% de las fallas pertenecen al sistema y solo el 6% al trabajador."
+      "<strong>Ciclo PDCA (Plan-Do-Check-Act):</strong> Modelo iterativo para probar cambios y lograr una mejora continua continua.",
+      "<strong>Sistema de Conocimiento Profundo:</strong> Enfoque que combina la comprensión de sistemas, el control de la variación estadística, la teoría del conocimiento y la psicología humana.",
+      "<strong>Los 14 Puntos de la Administración:</strong> Reglas clave como crear constancia en el propósito, eliminar la dependencia de la inspección masiva, desterrar el miedo laboral y sustituir la supervisión punitiva por liderazgo."
     ],
-    aportacionesTexto: "Los 14 Puntos de Deming, las 7 Enfermedades Mortales de la Gerencia, la popularización del Ciclo PHVA y el establecimiento del Premio Deming."
+    aportacionesTexto: "Los 14 Puntos de la Gerencia, las 7 Enfermedades Mortales, el Ciclo Deming (PDCA) y el establecimiento del Premio Deming en Japón."
   },
   {
     id: 5,
@@ -101,42 +108,48 @@ const personajes = [
     imagen: "imagenes/Philip b. crossby/Philip B. Crosby.png",
     icono: "fa-solid fa-circle-check",
     concepto: "Cero Defectos",
+    carpeta: "Philip b. crossby",
     imgPremios: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Philip b. crossby/White Modern Project Timeline Flyer (4).png",
-    contexto: "Como director de calidad en la fabricación de misiles en Martin Marietta, Crosby comprobó que tolerar márgenes de error generaba costos millonarios de reproceso, demostrando que hacer las cosas bien desde la primera vez es más económico.",
+    contexto: "En los años 60 y 70, las empresas japonesas adoptaron las enseñanzas de calidad de Deming y Juran, superando a las americanas en fiabilidad y costos. Frente a esta crisis de competitividad, Philip B. Crosby introdujo en 1979 su concepto de 'Cero Defectos' y la idea de que prevenir fallas resulta mucho más barato que corregirlas, transformando la gestión empresarial hacia la prevención integral.",
     obras: [
-      "<strong>Quality is Free (1979):</strong> Éxito editorial que demostró los beneficios económicos de la prevención.",
-      "<strong>Quality Without Tears (1984):</strong> Guía pragmática para involucrar al liderazgo en la calidad."
+      "<strong>Quality Is Free: The Art of Making Quality Certain (1979):</strong> Su libro más emblemático. Popularizó el concepto de que invertir en prevención genera ahorros mayores que los costos de no tener calidad.",
+      "<strong>Quality Without Tears: The Art of Hassle-Free Management (1984):</strong> Guía práctica orientada a la gerencia para implementar programas de calidad sin generar conflictos internos.",
+      "<strong>The Eternally Successful Organization (1988):</strong> Examina las características gerenciales necesarias para mantener a una empresa competitiva y saludable a largo plazo.",
+      "<strong>Let's Talk Quality (1989):</strong> Compilación de respuestas directas sobre problemas comunes de calidad y liderazgo empresarial.",
+      "<strong>Completeness: Quality in the 21st Century (1992):</strong> Aborda el concepto de la plenitud organizacional, integrando a proveedores, empleados y clientes en el proceso de calidad."
     ],
     filosofia: [
-      "La calidad se define únicamente como cumplir con los requisitos establecidos.",
-      "El sistema para lograr calidad es la prevención, no la corrección.",
-      "El único estándar de desempeño admisible es 'Cero Defectos'.",
-      "La medida de la calidad es el precio del incumplimiento."
+      "<strong>Definición:</strong> La calidad es cumplir con los requisitos, no ser 'bonito' o 'excelente'.",
+      "<strong>Sistema:</strong> Se logra mediante la prevención, no la inspección.",
+      "<strong>Estándar:</strong> El único nivel aceptable es Cero Defectos ('hacerlo bien a la primera').",
+      "<strong>Medición:</strong> Su costo se mide por el precio de la no conformidad (lo que cuesta equivocarse)."
     ],
-    aportacionesTexto: "Los 4 Absolutos de la Calidad, el programa de 14 pasos hacia el Cero Defectos y la Matriz de Madurez de la Gestión de la Calidad."
+    aportacionesTexto: "Los 4 Absolutos de la Calidad, el programa de los 14 Pasos para el Cero Defectos y el desarrollo de la cuadrícula de madurez de la gestión gerencial."
   },
   {
     id: 6,
     nombre: "Kaoru Ishikawa",
     resumen: "Teórico japonés de la administración empresarial, creador del Diagrama de Causa y Efecto y principal promotor de los Círculos de Calidad.",
-    imagen: "imagenes/Kaoru Ishikawa.png",
+    imagen: "imagenes/Kaoru Ishikawa/Kaoru Ishikawa.png",
     icono: "fa-solid fa-code-fork",
     concepto: "Diagrama Causa-Efecto",
     imgPremios: "imagenes/KAORU ISHIKAWA/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/KAORU ISHIKAWA/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/KAORU ISHIKAWA/White Modern Project Timeline Flyer (4).png",
-    contexto: "Ishikawa buscaba que los operarios de línea resolvieran problemas directamente en sus puestos de trabajo, democratizando las herramientas estadísticas para no depender de inspectores externos.",
+    contexto: "Tras la Segunda Guerra Mundial, Japón enfrentó la devastación económica y una pésima reputación global por sus productos de baja calidad. En las décadas de 1950 y 1960, Ishikawa lideró la transformación del modelo industrial japonés junto a expertos como Deming y Juran, convirtiendo al país en una potencia manufacturera referente en precisión, compromiso laboral y mejora continua.",
     obras: [
       "<strong>¿Qué es el Control Total de Calidad? La modalidad japonesa (1985):</strong> Análisis del modelo participativo japonés.",
-      "<strong>Guía para el Control de Calidad (1968):</strong> Manual elemental de herramientas prácticas."
+      "<strong>Guía para el Control de Calidad (1968):</strong> Manual elemental de herramientas prácticas.",
+      "<strong>Introducción al Control de Calidad (Introduction to Quality Control, 1989):</strong> Fundamentos teóricos y aplicaciones prácticas."
     ],
     filosofia: [
-      "El control de calidad empieza y termina con la educación.",
-      "El siguiente proceso en la cadena es tu cliente interno.",
-      "Administrar basándose en hechos y datos comprobados, sin suposiciones.",
-      "El control de calidad es tarea y responsabilidad de todos en la empresa."
+      "<strong>Orientación al cliente:</strong> La calidad la define el cliente, no el fabricante.",
+      "<strong>Cliente interno:</strong> 'El siguiente proceso es tu cliente'; cada área debe entregar un trabajo impecable a la siguiente etapa.",
+      "<strong>Participación total:</strong> Involucra a todos los empleados y niveles de la empresa.",
+      "<strong>Educación continua:</strong> Inicia y termina con la capacitación constante del personal.",
+      "<strong>Gestión basada en datos:</strong> Las decisiones se fundamentan en análisis estadísticos reales, no en intuiciones."
     ],
     aportacionesTexto: "El Diagrama de Ishikawa (Espina de Pescado), la creación de los Círculos de Calidad y la sistematización de las 7 Herramientas Básicas de la Calidad."
   },
@@ -144,65 +157,69 @@ const personajes = [
     id: 7,
     nombre: "Genichi Taguchi",
     resumen: "Ingeniero y estadístico japonés que formuló el Diseño Robusto de productos y la Función de Pérdida de la Calidad.",
-    imagen: "imagenes/Genichi Taguchi.png",
+    imagen: "imagenes/Genichi Taguchi/Genichi Taguchi.png",
     icono: "fa-solid fa-sliders",
     concepto: "Diseño Robusto",
-    imgPremios: "imagenes/GENICHI TAGUCHI/White Modern Project Timeline Flyer (3).png",
-    imgLinea: "imagenes/GENICHI TAGUCHI/White Modern Project Timeline Flyer (2).png",
-    imgEsquema: "imagenes/GENICHI TAGUCHI/White Modern Project Timeline Flyer (4).png",
-    contexto: "Al trabajar en la reconstrucción del sistema de telecomunicaciones japonés, diseñó métodos experimentales rápidos para crear productos insensibles a factores de ruido ambiental.",
+    imgPremios: "imagenes/Genichi Taguchi/White Modern Project Timeline Flyer (3).png",
+    imgLinea: "imagenes/Genichi Taguchi/White Modern Project Timeline Flyer (2).png",
+    imgEsquema: "imagenes/Genichi Taguchi/White Modern Project Timeline Flyer (4).png",
+    contexto: "Tras la Segunda Guerra Mundial, Japón enfrentó una severa escasez de recursos y la urgencia de reconstruir su industria. En las décadas de 1940 y 1950, Genichi Taguchi revolucionó la ingeniería al desarrollar métodos estadísticos de Diseño Robusto y Calidad Off-line, permitiendo crear productos altamente confiables al menor costo posible. Posteriormente, en los años 80, grandes multinacionales de Estados Unidos y Europa adoptaron sus innovadores enfoques para resolver sus propias crisis de competitividad..",
     obras: [
-      "<strong>System of Experimental Design (1987):</strong> Metodología de arreglos ortogonales para diseño de parámetros.",
-      "<strong>Introduction to Quality Engineering (1986):</strong> Fundamentos matemáticos de la función de pérdida."
+      "<strong>Sistemas de Diseño de Experimentos (System of Experimental Design, 1987)</strong>",
+      "<strong>Introducción a la Ingeniería de Calidad (Introduction to Quality Engineering, 1986)</strong>",
+      "<strong>Función de Pérdida de la Calidad (Quality Loss Function, publicaciones de los años 70 y 80)</strong>",
+      "<strong>Diseño Robusto usando los Métodos Taguchi (Robust Design Using Taguchi Methods)</strong>"
     ],
     filosofia: [
-      "La calidad es la pérdida monetaria que un producto causa a la sociedad desde que sale de fábrica.",
-      "La calidad debe optimizarse en la fase de diseño, no durante la manufactura.",
-      "El objetivo no es cumplir tolerancias rígidas, sino minimizar la variación alrededor del valor nominal."
+      "<strong>Función de Pérdida de Calidad:</strong> Cuantifica el costo financiero social de la variabilidad; cualquier desviación del valor objetivo genera pérdidas, aunque esté dentro de los límites de tolerancia.",
+      "<strong>Diseño Robusto:</strong> Crea productos y procesos insensibles a factores externos o ambientales impredecibles, asegurando un desempeño estable sin encarecer la producción.",
+      "<strong>Control de Calidad fuera de línea (Off-line):</strong> Optimiza el diseño de productos y procesos mediante experimentación estadística antes de la fabricación masiva."
     ],
-    aportacionesTexto: "La Función de Pérdida de Taguchi, el Diseño Robusto mediante arreglos ortogonales y la optimización de la relación Señal/Ruido (S/N)."
+    aportacionesTexto: "La Función de Pérdida de Taguchi (Loss Function), el Diseño de Experimentos Robusto y la optimización mediante la Relación Señal/Ruido (S/R)."
   },
   {
     id: 8,
     nombre: "Shigeru Mizuno",
     resumen: "Ingeniero japonés y referente en gestión de calidad, cofundador del Despliegue de la Función de Calidad (QFD) junto con Yoji Akao.",
-    imagen: "imagenes/Shigeru Mizuno.png",
+    imagen: "imagenes/Shigeru Mizuno/Shigeru Mizuno.png",
     icono: "fa-solid fa-table-cells",
     concepto: "Despliegue QFD",
     imgPremios: "imagenes/Shigeru Mizuno/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Shigeru Mizuno/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Shigeru Mizuno/White Modern Project Timeline Flyer (4).png",
-    contexto: "En los años 60 identificó que los métodos estadísticos operaban una vez iniciado el producto, por lo que desarrolló sistemas para conectar las demandas del cliente con la ingeniería previa al diseño.",
+    contexto: "Inició su carrera tras la Segunda Guerra Mundial integrándose a la Unión de Científicos e Ingenieros Japoneses (JUSE) y al Grupo de Investigación del Control de Calidad. Desarrolló su labor docente en el Instituto Tecnológico de Tokio colaborando estrechamente con figuras como Kaoru Ishikawa, Tetsuichi Asaka y Masao Kogure para adaptar las teorías de pioneros estadounidenses (Deming y Juran) al modelo industrial japonés de la época.",
     obras: [
-      "<strong>Company-Wide Quality Control (1988):</strong> Marco para el control total en corporaciones globales.",
-      "<strong>Management for Quality Improvement: The 7 New QC Tools (1979):</strong> Sistematización de herramientas gerenciales."
+      "<strong>Company-Wide Total Quality Control:</strong> Libro fundamental donde explica la implementación del control de calidad total a nivel organizacional.",
+      "<strong>Quality Function Deployment (QFD): Integrating Customer Requirements into Product Design:</strong> Coautor junto con Yoji Akao.",
+      "<strong>Management for Quality Improvement: The 7 New QC Tools:</strong> Obra dedicada al desarrollo y aplicación de las 7 nuevas herramientas de gestión."
     ],
     filosofia: [
-      "El aseguramiento de la calidad debe comenzar desde el diseño conceptual.",
-      "Es indispensable estructurar sistemáticamente cómo las necesidades del cliente se traducen a especificaciones.",
-      "Las herramientas estadísticas deben complementarse con herramientas cualitativas de planificación."
+      "<strong>Despliegue de políticas:</strong> La alta dirección establece metas de calidad claras y las delega sistemáticamente a los niveles operativos.",
+      "<strong>Gestión interfuncional:</strong> Promueve una estructura matricial para eliminar barreras entre departamentos, garantizando calidad en cada etapa del diseño y manufactura.",
+      "<strong>Participación total:</strong> Define responsabilidades concretas para todos los colaboradores, desde la dirección gerencial hasta los operarios de planta."
     ],
-    aportacionesTexto: "Co-creador del sistema QFD (Quality Function Deployment), impulsor de las 7 Nuevas Herramientas de Gestión y defensor del aseguramiento integral en diseño."
+    aportacionesTexto: "Co-creador del sistema QFD (Quality Function Deployment), impulsor de las 7 Nuevas Herramientas de Gestión y promotor del aseguramiento integral en diseño."
   },
   {
     id: 9,
     nombre: "Yoji Akao",
     resumen: "Especialista japonés en ingeniería de calidad. Desarrolló el método Hoshin Kanri (Planificación Estratégica) y fue pionero clave del QFD.",
-    imagen: "imagenes/Yoji Akao.png",
+    imagen: "imagenes/Yoji Akao/Yoji Akao.png",
     icono: "fa-solid fa-compass",
     concepto: "Hoshin Kanri",
     imgPremios: "imagenes/Yoji Akao/Yoji Akao.png",
     imgLinea: "imagenes/Yoji Akao/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Yoji Akao/White Modern Project Timeline Flyer (4).png",
-    contexto: "Akao detectó que los planes estratégicos de la alta dirección no solían llegar con claridad a la base operativa, por lo que diseñó matrices de despliegue para alinear objetivos anuales con tareas medibles.",
+    contexto: "Desarrolló su trabajo en el Japón de posguerra durante la segunda mitad del siglo XX, periodo caracterizado por la urgente reconstrucción industrial del país. Formó parte del movimiento de Control de Calidad Total (TQC) enfocado en transitary estructurar las demandas cambiantes del mercado globalizado hacia el diseño e ingeniería de productos.",
     obras: [
-      "<strong>Quality Function Deployment: Integrating Customer Requirements into Product Design (1990):</strong> La obra de referencia sobre QFD.",
-      "<strong>Hoshin Kanri: Policy Deployment for Successful TQM (1991):</strong> Metodología de despliegue de políticas."
+      "<strong>Quality Function Deployment (QFD): Integrating Customer Requirements into Product Design:</strong> Obra referente sobre el Despliegue de la Función de Calidad.",
+      "<strong>Hoshin Kanri: Policy Deployment for Successful TQM:</strong> Libro fundamental para la implementación del despliegue de políticas y alineación estratégica."
     ],
     filosofia: [
-      "Escuchar la Voz del Cliente (VOC) y preservarla durante todo el ciclo productivo.",
-      "El despliegue de políticas exige un diálogo bidireccional continuo (Catchball).",
-      "Cada nivel de la empresa debe tener metas claras articuladas con la visión global."
+      "<strong>Orientación absoluta al cliente (Voice of the Customer):</strong> Diseñar de forma proactiva lo que el usuario realmente desea y valora, en lugar de solo corregir fallos o cumplir especificaciones internas.",
+      "<strong>Prevención y diseño desde el origen:</strong> Incorporar la calidad desde la fase conceptual del producto, lo cual es más eficiente y económico que corregir errores en producción.",
+      "<strong>Traducibilidad y trazabilidad:</strong> Traducir los deseos del cliente a especificaciones técnicas y controles de proceso para eliminar la brecha entre el lenguaje del mercado y el de la ingeniería.",
+      "<strong>Alineación estratégica global (Hoshin Kanri):</strong> Integrar la calidad en la estrategia general de la empresa, alineando las metas directivas con el trabajo diario de cada área."
     ],
     aportacionesTexto: "El diseño de la 'Casa de la Calidad' en el modelo QFD, el desarrollo del Hoshin Kanri y la integración de la planificación estratégica con la calidad total."
   },
@@ -210,13 +227,13 @@ const personajes = [
     id: 10,
     nombre: "Shigeo Shingo",
     resumen: "Ingeniero industrial japonés y asesor clave de Toyota. Desarrolló los dispositivos Poka-Yoke (a prueba de errores) y la metodología de cambios rápidos SMED.",
-    imagen: "imagenes/Shingo Shigeo.png",
+    imagen: "imagenes/Shingeo Shingo/Shingo Shigeo.png",
     icono: "fa-solid fa-shield-halved",
     concepto: "Poka-Yoke / SMED",
     imgPremios: "imagenes/Shingeo Shingo/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Shingeo Shingo/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Shingeo Shingo/White Modern Project Timeline Flyer (4).png",
-    contexto: "Trabajando en el Sistema de Producción Toyota, Shingo comprendió que registrar defectos después de que ocurrían era un desperdicio; el camino radicaba en diseñar mecanismos que impidieran físicamente cometer el error.",
+    contexto: "En 1930 Japón estaba absorbiendo ávidamente los conceptos occidentales de la Administración Científica de Frederick Taylor (el estudio formal de tiempos y movimientos en las fábricas). Shingo adoptó esta base analítica, pero observó una falla crítica: el Taylorismo trataba a los operarios como robots y asumía que el error humano en los productos era inevitable, algo que él se propuso corregir de raíz.",
     obras: [
       "<strong>A Study of the Toyota Production System (1981):</strong> Análisis técnico y operativo del Just in Time.",
       "<strong>Zero Quality Control: Source Inspection and the Poka-Yoke System (1986):</strong> Manual de inspección en la fuente."
@@ -232,7 +249,7 @@ const personajes = [
     id: 11,
     nombre: "Armand Vallin Feigenbaum",
     resumen: "Empresario y experto estadounidense en calidad. Formuló el concepto fundacional de Control Total de la Calidad (TQC) y la medición de los Costos de Calidad.",
-    imagen: "imagenes/Armand Vallin Feigenbaum.png",
+    imagen: "imagenes/Armand Vallin Feigenbaum/Armand Vallin Feigenbaum.png",
     icono: "fa-solid fa-boxes-packing",
     concepto: "Control Total (TQC)",
     imgPremios: "imagenes/Armand Vallin Feigenbaum/White Modern Project Timeline Flyer (3).png",
@@ -297,9 +314,6 @@ const personajes = [
   }
 ];
 
-// =============================================================
-// 1. CARGA EN LA PÁGINA PRINCIPAL (index.html)
-// =============================================================
 const contenedorLista = document.getElementById("lista-personajes");
 
 if (contenedorLista) {
