@@ -144,6 +144,7 @@ const personajes = [
       "<strong>Guía para el Control de Calidad (1968):</strong> Manual elemental de herramientas prácticas.",
       "<strong>Introducción al Control de Calidad (Introduction to Quality Control, 1989):</strong> Fundamentos teóricos y aplicaciones prácticas."
     ],
+    introFilosofia: "La filosofía del Control Total de Calidad (CWQC) sostiene que la calidad es un compromiso participativo de toda la organización, articulado en cinco ejes:",
     filosofia: [
       "<strong>Orientación al cliente:</strong> La calidad la define el cliente, no el fabricante.",
       "<strong>Cliente interno:</strong> 'El siguiente proceso es tu cliente'; cada área debe entregar un trabajo impecable a la siguiente etapa.",
@@ -255,15 +256,18 @@ const personajes = [
     imgPremios: "imagenes/Armand Vallin Feigenbaum/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Armand Vallin Feigenbaum/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Armand Vallin Feigenbaum/White Modern Project Timeline Flyer (4).png",
-    contexto: "Como director de operaciones en General Electric, Feigenbaum advirtió que la calidad no podía confinarse a un departamento: dependía de finanzas, compras, ventas y servicio postventa por igual.",
+    contexto: "El contexto histórico de  Feigenbaum abarca las décadas centrales del siglo XX, un periodo en el que la industria global experimentó una transformación radical debido al crecimiento masivo de la producción, la postguerra y la creciente complejidad de los sistemas tecnológicos y corporativos.",
     obras: [
-      "<strong>Total Quality Control (1961):</strong> Obra pionera que convirtió la calidad en una disciplina de administración general.",
-      "<strong>The Power of Management Capital (2003):</strong> Guía ejecutiva sobre el valor económico de la calidad."
+      "<strong>Total Quality Control (Control Total de la Calidad):</strong> Considerada su obra cumbre y un pilar fundamental para la industria global.",
+      "<strong>The Power of Management Capital (El Poder del Capital de Gestión):</strong> Escrito en 2003 junto a su hermano Donald S. Feigenbaum.",
+      "<strong>The Power of Management Innovation (El Poder de la Innovación en la Gestión):</strong> Publicado en 2009 (también en coautoría con su hermano)."
     ],
     filosofia: [
-      "La calidad es lo que el cliente dice que es, no lo que la empresa asume.",
-      "La calidad no es una función técnica aislada, sino una forma holística de dirigir la empresa.",
-      "Los costos de no tener calidad deterioran de forma oculta la rentabilidad del negocio."
+      "<strong>El cliente decide:</strong> La calidad no la define la empresa ni el ingeniero, sino la experiencia real y la satisfacción del cliente.",
+      "<strong>Control Total (TQC):</strong> Es un compromiso de toda la empresa. No es tarea de un solo departamento, sino un modelo de vida corporativa desde la gerencia hasta el operario.",
+      "<strong>Ciclo completo:</strong> La calidad se construye desde el diseño y los proveedores hasta el servicio posventa; no se logra solo inspeccionando el producto al final.",
+      "<strong>La 'Planta Oculta':</strong> Al hacer las cosas mal, se desperdicia entre el 15% y el 40% de la capacidad de una fábrica en corregir errores y repetir trabajos.",
+      "<strong>La calidad ahorra dinero:</strong> Hacerlo bien a la primera reduce los costos por fallas (devoluciones, quejas y desechos), lo que aumenta la rentabilidad."
     ],
     aportacionesTexto: "Creación del concepto Control Total de Calidad (TQC), clasificación de los Costos de Calidad (Prevención, Evaluación, Fallas Internas y Fallas Externas) y liderazgo en la ASQ."
   },
@@ -277,15 +281,16 @@ const personajes = [
     imgPremios: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (3).png",
     imgLinea: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (2).png",
     imgEsquema: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (4).png",
-    contexto: "Pirsig cuestionó la división tradicional entre la frialdad técnica de la ingeniería y el idealismo humanista, buscando una definición unificadora que devolviera el orgullo y la vocación al trabajo cotidiano.",
+    contexto: "Durante la segunda mitad del siglo XX, Pirsig reflexionó sobre la relación entre las personas, la tecnología, los valores y la búsqueda de la excelencia. Sus ideas cuestionaron la separación estricta entre los aspectos técnicos y humanos de las actividades, proponiendo una visión más amplia de la calidad.",
     obras: [
-      "<strong>Zen and the Art of Motorcycle Maintenance (1974):</strong> Una de las obras filosóficas más leídas del siglo XX sobre la relación entre el ser humano y la calidad técnica.",
-      "<strong>Lila: An Inquiry into Morals (1991):</strong> Sistematización formal de la Metafísica de la Calidad."
+      "<strong>Zen and the Art of Motorcycle Maintenance (1974):</strong> Es su obra más conocida. Combina el relato de un viaje en motocicleta con reflexiones filosóficas sobre la tecnología, los valores, la racionalidad y el concepto de Calidad.",
+      "<strong>Lila: An Inquiry into Morals (1991):</strong> Obra en la que profundizó en sus ideas filosóficas y desarrolló con mayor amplitud su teoría sobre los valores y los patrones de evolución."
     ],
+    introFilosofia: "La filosofía de la calidad de Robert M. Pirsig, desarrollada en su obra Zen y el arte del mantenimiento de la motocicleta, propone una visión profundamente humanista y metafísica que se aparta de los modelos estadísticos o puramente corporativos tradicionales. Sus pilares fundamentales son:",
     filosofia: [
-      "La calidad es un evento primordial anterior a la separación entre sujeto y objeto.",
-      "La tranquilidad mental y la dedicación son indispensables para producir un trabajo excelente.",
-      "La calidad dinámica fomenta la innovación, mientras que la estática sostiene la estructura."
+      "<strong>La Calidad como una Realidad Indivisible:</strong> Pirsig argumenta que la calidad no es meramente subjetiva ni totalmente objetiva, sino es una esencia universal que todos reconocemos de forma intuitiva al experimentarla.",
+      "<strong>El Cuidado y la Conexión Humana (Care):</strong> La calidad está intrínsecamente ligada al grado de devoción, atención y respeto que una persona invierte en su labor.",
+      "<strong>La Unión entre lo Clásico y lo Romántico:</strong> Pirsig señala que los conflictos de la modernidad nacen de la separación entre el pensamiento clásico (analítico, lógico y basado en la estructura técnica) y el romántico. La verdadera calidad surge al integrar ambas dimensiones para que la ciencia, la tecnología y el arte humano convivan en equilibrio."
     ],
     aportacionesTexto: "La formulación de la Metafísica de la Calidad (MOQ), la reconciliación entre la tecnología y los valores humanos, e inspiración clave en la cultura moderna de ingeniería de software y procesos."
   },
@@ -301,14 +306,17 @@ const personajes = [
     imgEsquema: "imagenes/Peter Senge/White Modern Project Timeline Flyer (4).png",
     contexto: "Senge demostró que en un mundo globalizado los esquemas de mando rígido fracasaban porque trataban los problemas de forma aislada, en lugar de comprenderlos como sistemas interconectados.",
     obras: [
-      "<strong>La Quinta Disciplina (1990):</strong> Texto fundamental sobre el aprendizaje continuo y la gestión sistémica en empresas.",
-      "<strong>The Necessary Revolution (2008):</strong> Enfoque sobre sostenibilidad y toma de decisiones complejas."
+      "<strong>La Quinta Disciplina (1990):</strong> Considerada su obra maestra orientada a la calidad estructural.",
+      "<strong>La Quinta Disciplina en la Práctica (1994):</strong> Es el manual operativo indispensable para la implementación de la calidad en los procesos de trabajo.",
+      "<strong>La Danza del Cambio (1999):</strong> Esta obra se enfoca directamente en la mejora continua (Kaizen), un pilar de la gestión de la calidad."
     ],
+    introFilosofia: "La filosofía de la calidad de Peter Senge se fundamenta en que la verdadera calidad no se logra mediante inspecciones rígidas o controles estadísticos aislados, sino a través del desarrollo humano y el aprendizaje colectivo. Para Senge, la calidad sostenible es un resultado natural de una organización inteligente:",
     filosofia: [
-      "Las organizaciones competitivas son las que aprenden con mayor rapidez que su entorno.",
-      "Los problemas de hoy suelen derivar de las soluciones mal calculadas de ayer.",
-      "Transformar una empresa exige revisar los modelos mentales de sus líderes.",
-      "El pensamiento sistémico permite ver patrones completos y no hechos aislados."
+      "La verdadera calidad no se logra mediante inspecciones rígidas o controles estadísticos aislados, sino a través del desarrollo humano y el aprendizaje colectivo.",
+      "Para Senge, la calidad sostenible es un resultado natural de una organización inteligente.",
+      "<strong>La Calidad es un Problema Sistémico, no de Control:</strong> Senge sostiene que los defectos, errores o problemas de productividad no se deben a fallas individuales de los trabajadores, sino a las deficiencias de los sistemas en los que operan.",
+      "<strong>El Aprendizaje Organizacional como Motor de la Calidad:</strong> Para que la calidad sea continua (el concepto de Kaizen), una organización debe aprender constantemente de sus propios errores.",
+      "<strong>La Calidad Nace de la Motivación Intrínseca:</strong> A diferencia de los enfoques que imponen métricas de calidad por decreto o mediante bonos y castigos, la visión de Senge se apoya en el Dominio Personal."
     ],
     aportacionesTexto: "Las 5 Disciplinas del Aprendizaje Organizacional (Dominio Personal, Modelos Mentales, Visión Compartida, Aprendizaje en Equipo y Pensamiento Sistémico) y la fundación de la Society for Organizational Learning (SoL)."
   }
@@ -409,7 +417,7 @@ if (contenedorDetalle) {
           <img src="${p.imgLinea}" alt="Línea de tiempo" class="img-infografica-completa" onerror="this.parentElement.style.display='none'">
         </div>
 
-        <!-- Obras Principales -->
+       <!-- Obras Principales -->
         <div class="bloque-seccion">
           <h2 class="pildora-seccion">Obras principales</h2>
           <ul>
@@ -420,7 +428,7 @@ if (contenedorDetalle) {
         <!-- Filosofía de la Calidad -->
         <div class="bloque-seccion">
           <h2 class="pildora-seccion">Filosofía de la Calidad</h2>
-          <p style="margin-top: 10px; margin-bottom: 6px;">La perspectiva de calidad de ${p.nombre} se fundamenta en los siguientes principios:</p>
+          ${p.introFilosofia ? `<p style="margin-top: 10px; margin-bottom: 8px; color: #334155; line-height: 1.5;">${p.introFilosofia}</p>` : ''}
           <ul>
             ${listaFilosofiaHTML}
           </ul>
@@ -439,4 +447,5 @@ if (contenedorDetalle) {
       </section>
     </div>
   `;
+  
 }
