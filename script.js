@@ -132,7 +132,7 @@ const personajes = [
     id: 6,
     nombre: "Kaoru Ishikawa",
     resumen: "Teórico japonés de la administración empresarial, creador del Diagrama de Causa y Efecto y principal promotor de los Círculos de Calidad.",
-    imagen: "imagenes/Kaoru Ishikawa/kaoru ishikawa.png",
+    imagen: "imagenes/KAORU ISHIKAWA/kaoru ishikawa.png",
     icono: "fa-solid fa-code-fork",
     concepto: "Diagrama Causa-Efecto",
     imgPremios: "imagenes/KAORU ISHIKAWA/White Modern Project Timeline Flyer (3).png",
