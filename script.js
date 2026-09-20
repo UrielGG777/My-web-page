@@ -281,7 +281,7 @@ const personajes = [
     imgPremios: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (4).jpeg",
     imgLinea: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (2).jpeg",
     imgEsquema: "imagenes/Robert M. Pirsig/White Modern Project Timeline Flyer (3).jpeg",
-    contexto: "El surgimiento de la filosofía de Peter Senge a finales de los años 80 y principios de los 90 representó un cambio de paradigma radical en la historia de la Gestión de la Calidad. Su propuesta no nació en el vacío, sino como una respuesta directa al agotamiento de los métodos de control técnico y a la necesidad de dotar a las empresas de una visión humana y adaptativa ante la globalización. .",
+    contexto: "Durante la segunda mitad del siglo XX, Pirsig reflexionó sobre la relación entre las personas, la tecnología, los valores y la búsqueda de la excelencia. Sus ideas cuestionaron la separación estricta entre los aspectos técnicos y humanos de las actividades, proponiendo una visión más amplia de la calidad.",
     obras: [
       "<strong>Zen and the Art of Motorcycle Maintenance (1974):</strong> Es su obra más conocida. Combina el relato de un viaje en motocicleta con reflexiones filosóficas sobre la tecnología, los valores, la racionalidad y el concepto de Calidad.",
       "<strong>Lila: An Inquiry into Morals (1991):</strong> Obra en la que profundizó en sus ideas filosóficas y desarrolló con mayor amplitud su teoría sobre los valores y los patrones de evolución."
@@ -304,7 +304,7 @@ const personajes = [
     imgPremios: "imagenes/Peter Senge/White Modern Project Timeline Flyer (4).jpeg",
     imgLinea: "imagenes/Peter Senge/White Modern Project Timeline Flyer (2).jpeg",
     imgEsquema: "imagenes/Peter Senge/White Modern Project Timeline Flyer (3).jpeg",
-    contexto: "El surgimiento de la filosofía de Peter Senge a finales de los años 80 y principios de los 90 representó un cambio de paradigma radical en la historia de la Gestión de la Calidad. Su propuesta no nació en el vacío, sino como una respuesta directa al agotamiento de los métodos de control técnico y a la necesidad de dotar a las empresas de una visión humana y adaptativa ante la globalización.",
+    contexto: "Senge demostró que en un mundo globalizado los esquemas de mando rígido fracasaban porque trataban los problemas de forma aislada, en lugar de comprenderlos como sistemas interconectados.",
     obras: [
       "<strong>La Quinta Disciplina (1990):</strong> Considerada su obra maestra orientada a la calidad estructural.",
       "<strong>La Quinta Disciplina en la Práctica (1994):</strong> Es el manual operativo indispensable para la implementación de la calidad en los procesos de trabajo.",

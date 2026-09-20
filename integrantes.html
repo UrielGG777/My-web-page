@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Integrantes del Equipo | Gestión de la Calidad</title>
-  <link rel="stylesheet" href="style.css">
-  
+  <title>Equipo de Trabajo | Gestión de la Calidad</title>
+
   <style>
-    /* Reset básico */
+    /* RESET Y ESTRUCTURA BASE */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,105 +16,94 @@
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* HEADER ESTILO PRINCIPAL */
-    .header-hero {
-      background-color: #04244c; /* Azul marino institucional */
-      background-image: 
-        radial-gradient(circle at 90% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%),
-        url("imagenes/logo-instituto.png"); /* Marca de agua tenue a la derecha */
-      background-repeat: no-repeat;
-      background-position: right 20px center;
-      background-size: auto, 260px;
+    /* ENCABEZADO INSTITUCIONAL */
+    .banner-equipo {
+      background-color: #04244c;
+      padding: 24px 60px 36px 60px;
       color: #ffffff;
-      padding: 24px 60px 40px 60px;
-      position: relative;
     }
 
-    /* Barra superior de logos y botón */
-    .header-top-bar {
+    .banner-fila-superior {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     }
 
-    .logos-agrupados {
+    .logos-contenedor {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 20px;
     }
 
-    .logo-item {
-      height: 48px;
+    .logo-inst {
+      height: 46px;
       width: auto;
       object-fit: contain;
-      filter: brightness(0) invert(1); /* Vuelve blancos los logos si son oscuros */
     }
 
-    /* Si el logo de Educación ya tiene color vino/rojo y no quieres invertirlo */
-    .logo-item.color-original {
-      filter: none;
-    }
-
-    /* Botón ovalado estilo píldora como el de 'Integrantes' */
-    .btn-nav-outline {
+    .btn-regresar-inicio {
       display: inline-block;
-      padding: 8px 30px;
-      border: 1.5px solid rgba(255, 255, 255, 0.85);
-      border-radius: 30px;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.5px;
+      padding: 8px 32px;
       background: transparent;
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1.5px solid rgba(255, 255, 255, 0.85);
+      border-radius: 50px;
       transition: all 0.2s ease;
     }
 
-    .btn-nav-outline:hover {
-      background: #ffffff;
+    .btn-regresar-inicio:hover {
+      background-color: #ffffff;
       color: #04244c;
     }
 
-    /* Títulos principales */
-    .header-content-hero {
-      margin-top: 35px;
+    .banner-titulos {
+      margin-top: 26px;
     }
 
-    .titulo-hero {
-      font-size: 2.8rem;
+    .titulo-banner {
+      font-size: 2.5rem;
       font-weight: 900;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
       color: #ffffff;
+      margin-bottom: 6px;
       line-height: 1.1;
-      margin-bottom: 10px;
     }
 
-    .subtitulo-hero {
-      font-size: 1.15rem;
+    .subtitulo-banner {
+      font-size: 1.05rem;
       font-weight: 300;
       color: #cbd5e1;
     }
 
-    /* Contenedor de las tarjetas */
-    .contenedor-integrantes {
+    /* CUADRÍCULA DE TARJETAS */
+    .contenedor-equipo {
       max-width: 1200px;
-      margin: 50px auto 70px auto;
-      padding: 0 24px;
+      margin: 50px 0 70px 0; /* Quita el 'auto' que lo centra */
+      padding: 0 60px;       /* Ajusta el espacio al borde izquierdo */
+      flex: 1;
     }
 
-    .grid-integrantes {
+    .grid-tarjetas-alumnos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* auto-fill evita que se estiren al inicio */
       gap: 28px;
-      justify-content: center;
+      justify-content: start; /* Alinea las columnas hacia la izquierda */
     }
 
-    .tarjeta-integrante {
+    .card-alumno {
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 16px;
@@ -128,28 +116,23 @@
       align-items: center;
     }
 
-    .tarjeta-integrante:hover {
+    .card-alumno:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 20px -3px rgba(4, 36, 76, 0.15);
-      border-color: #cbd5e1;
+      box-shadow: 0 12px 24px -4px rgba(4, 36, 76, 0.15);
+      border-color: #bfdbfe;
     }
 
-    .avatar-wrapper {
+    .foto-perfil-alumno {
       width: 140px;
       height: 140px;
-      margin-bottom: 18px;
-    }
-
-    .tarjeta-integrante img {
-      width: 100%;
-      height: 100%;
       border-radius: 50%;
       object-fit: cover;
       border: 3.5px solid #04244c;
       background-color: #f1f5f9;
+      margin-bottom: 18px;
     }
 
-    .tarjeta-integrante h3 {
+    .nombre-alumno {
       font-size: 1.05rem;
       color: #0f172a;
       font-weight: 700;
@@ -161,7 +144,7 @@
       justify-content: center;
     }
 
-    .badge-control {
+    .pildora-nc {
       display: inline-block;
       background: #eff6ff;
       color: #04244c;
@@ -172,21 +155,31 @@
       border: 1px solid #bfdbfe;
     }
 
-    /* Adaptación para pantallas móviles */
+    /* FOOTER INSTITUCIONAL */
+    .footer-institucional {
+      background-color: #04244c;
+      color: #93c5fd;
+      text-align: center;
+      padding: 22px 20px;
+      font-size: 0.88rem;
+      letter-spacing: 0.4px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* ADAPTACIÓN MÓVIL */
     @media (max-width: 768px) {
-      .header-hero {
-        padding: 20px;
-        background-position: right -60px center;
+      .banner-equipo {
+        padding: 20px 24px;
       }
-      .titulo-hero {
-        font-size: 2rem;
-      }
-      .header-top-bar {
+      .banner-fila-superior {
         flex-direction: column;
         gap: 16px;
         align-items: flex-start;
       }
-      .btn-nav-outline {
+      .titulo-banner {
+        font-size: 1.9rem;
+      }
+      .btn-regresar-inicio {
         align-self: flex-start;
       }
     }
@@ -194,72 +187,63 @@
 </head>
 <body>
 
-  <!-- ENCABEZADO IDÉNTICO AL PRINCIPAL -->
-  <header class="header-hero">
-    <div class="header-top-bar">
-      <div class="logos-agrupados">
-        <!-- Reemplaza o ajusta las rutas según los nombres exactos de tus logos -->
-        <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-item">
-        <img src="imagenes/logo-sep.png" alt="Educación SEP" class="logo-item color-original">
-        <img src="imagenes/logo-instituto.png" alt="Escuela" class="logo-item color-original">
+  <!-- ENCABEZADO -->
+  <header class="banner-equipo">
+    <div class="banner-fila-superior">
+      <div class="logos-contenedor">
+        <img src="imagenes/logo-tecnm.png" alt="TecNM" class="logo-inst">
+        <img src="imagenes/logo-sep.png" alt="SEP" class="logo-inst">
       </div>
-      
-      <!-- Botón de retorno a la página principal con el mismo estilo del botón 'Integrantes' -->
-      <a href="index.html" class="btn-nav-outline">Inicio</a>
+      <a href="index.html" class="btn-regresar-inicio">Inicio</a>
     </div>
 
-    <div class="header-content-hero">
-      <h1 class="titulo-hero">EQUIPO DE TRABAJO</h1>
-      <p class="subtitulo-hero">Estudiantes de la materia Gestión de los Sistemas de Calidad</p>
+    <div class="banner-titulos">
+      <h1 class="titulo-banner">EQUIPO DE TRABAJO</h1>
+      <p class="subtitulo-banner">Estudiantes de la materia Gestión de los Sistemas de Calidad</p>
     </div>
   </header>
 
-  <!-- LISTA DE INTEGRANTES -->
-  <main class="contenedor-integrantes">
-    <div class="grid-integrantes">
+  <!-- TARJETAS -->
+  <main class="contenedor-equipo">
+    <div class="grid-tarjetas-alumnos">
       
-      <div class="tarjeta-integrante">
-        <div class="avatar-wrapper">
-          <img src="imagenes/ary.jpeg" alt="Calderón Sánchez Aryana" onerror="this.src='https://ui-avatars.com/api/?name=Aryana+Calderon&background=04244c&color=fff'">
-        </div>
-        <h3>Calderón Sánchez Aryana</h3>
-        <span class="badge-control">No. Control: 23070967</span>
+      <div class="card-alumno">
+        <img src="imagenes/ary.jpeg" alt="Calderón Sánchez Aryana" class="foto-perfil-alumno" onerror="this.src='https://ui-avatars.com/api/?name=Aryana+Calderon&background=04244c&color=fff'">
+        <h3 class="nombre-alumno">Calderón Sánchez Aryana</h3>
+        <span class="pildora-nc">No. Control: 23070967</span>
       </div>
 
-      <div class="tarjeta-integrante">
-        <div class="avatar-wrapper">
-          <img src="imagenes/Miroslava.jpeg" alt="Nava Zavala Miroslava" onerror="this.src='https://ui-avatars.com/api/?name=Miroslava+Nava&background=04244c&color=fff'">
-        </div>
-        <h3>Nava Zavala Miroslava</h3>
-        <span class="badge-control">No. Control: 23071133</span>
+      <div class="card-alumno">
+        <img src="imagenes/Miroslava.jpeg" alt="Nava Zavala Miroslava" class="foto-perfil-alumno" onerror="this.src='https://ui-avatars.com/api/?name=Miroslava+Nava&background=04244c&color=fff'">
+        <h3 class="nombre-alumno">Nava Zavala Miroslava</h3>
+        <span class="pildora-nc">No. Control: 23071133</span>
       </div>
 
-      <div class="tarjeta-integrante">
-        <div class="avatar-wrapper">
-          <img src="imagenes/Itzel.jpeg" alt="González Bautista Itzel Amairany" onerror="this.src='https://ui-avatars.com/api/?name=Itzel+Gonzalez&background=04244c&color=fff'">
-        </div>
-        <h3>González Bautista Itzel Amairany</h3>
-        <span class="badge-control">No. Control: 23071024</span>
+      <div class="card-alumno">
+        <img src="imagenes/Itzel.jpeg" alt="González Bautista Itzel Amairany" class="foto-perfil-alumno" onerror="this.src='https://ui-avatars.com/api/?name=Itzel+Gonzalez&background=04244c&color=fff'">
+        <h3 class="nombre-alumno">González Bautista Itzel Amairany</h3>
+        <span class="pildora-nc">No. Control: 23071024</span>
       </div>
 
-      <div class="tarjeta-integrante">
-        <div class="avatar-wrapper">
-          <img src="imagenes/Ariadna.jpeg" alt="Gómez Garza Ariadna Nefertiti" onerror="this.src='https://ui-avatars.com/api/?name=Ariadna+Gomez&background=04244c&color=fff'">
-        </div>
-        <h3>Gómez Garza Ariadna Nefertiti</h3>
-        <span class="badge-control">No. Control: 23071013</span>
+      <div class="card-alumno">
+        <img src="imagenes/Ariadna.jpeg" alt="Gómez Garza Ariadna Nefertiti" class="foto-perfil-alumno" onerror="this.src='https://ui-avatars.com/api/?name=Ariadna+Gomez&background=04244c&color=fff'">
+        <h3 class="nombre-alumno">Gómez Garza Ariadna Nefertiti</h3>
+        <span class="pildora-nc">No. Control: 23071013</span>
       </div>
 
-      <div class="tarjeta-integrante">
-        <div class="avatar-wrapper">
-          <img src="imagenes/Victor.jpeg" alt="Medellín Delgado Victor Jeovanni" onerror="this.src='https://ui-avatars.com/api/?name=Victor+Medellin&background=04244c&color=fff'">
-        </div>
-        <h3>Medellín Delgado Victor Jeovanni</h3>
-        <span class="badge-control">No. Control: 23071640</span>
+      <div class="card-alumno">
+        <img src="imagenes/Victor.jpeg" alt="Medellín Delgado Victor Jeovanni" class="foto-perfil-alumno" onerror="this.src='https://ui-avatars.com/api/?name=Victor+Medellin&background=04244c&color=fff'">
+        <h3 class="nombre-alumno">Medellín Delgado Victor Jeovanni</h3>
+        <span class="pildora-nc">No. Control: 23071640</span>
       </div>
 
     </div>
   </main>
+
+  <!-- PIE DE PÁGINA INSTITUCIONAL -->
+  <footer class="footer-institucional">
+    © 2026 | Tecnológico Nacional de México
+  </footer>
 
 </body>
 </html>
