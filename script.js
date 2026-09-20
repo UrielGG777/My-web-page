@@ -352,28 +352,34 @@ if (contenedorLista) {
 
   // Tarjeta final de Bibliografías
   const tarjetaBiblio = document.createElement("article");
-  tarjetaBiblio.classList.add("tarjeta-precursor", "tarjeta-bibliografia");
+tarjetaBiblio.classList.add("tarjeta-precursor", "tarjeta-bibliografia");
 
-  tarjetaBiblio.innerHTML = `
-    <div class="col-info">
-      <h2 class="nombre-precursor">Referencias bibliográficas</h2>
-      <div class="lista-citas-texto">
-        <p class="item-biblio">American Society for Quality. (s. f.). <em>Walter A. Shewhart</em>. https://asq.org/about-asq/honorary-members/shewhart</p>
-        <p class="item-biblio">Crosby, P. B. (1979). <em>Quality is Free: The Art of Making Quality Certain</em>. McGraw-Hill.</p>
-        <p class="item-biblio">Deming, W. E. (1986). <em>Out of the Crisis</em>. MIT Press.</p>
-        <p class="item-biblio">Feigenbaum, A. V. (1961). <em>Total Quality Control</em>. McGraw-Hill.</p>
-        <p class="item-biblio">Imai, M. (1986). <em>Kaizen: The key to Japan’s competitive success</em>. McGraw-Hill.</p>
-        <p class="item-biblio">Ishikawa, K. (1985). <em>What is Total Quality Control? The Japanese Way</em>. Prentice-Hall.</p>
-        <p class="item-biblio">Juran, J. M. (1951). <em>Quality Control Handbook</em>. McGraw-Hill.</p>
-        <p class="item-biblio">Pirsig, R. M. (1974). <em>Zen and the Art of Motorcycle Maintenance</em>. William Morrow & Company.</p>
-        <p class="item-biblio">Senge, P. M. (1990). <em>The Fifth Discipline: The Art and Practice of the Learning Organization</em>. Doubleday.</p>
-        <p class="item-biblio">Shingo, S. (1986). <em>Zero Quality Control: Source Inspection and the Poka-Yoke System</em>. Productivity Press.</p>
-        <p class="item-biblio">Taguchi, G. (1986). <em>Introduction to Quality Engineering</em>. Asian Productivity Organization.</p>
-      </div>
+tarjetaBiblio.innerHTML = `
+  <div class="col-info">
+    <h2 class="nombre-precursor">Referencias bibliográficas</h2>
+    <div class="lista-citas-texto">
+      <p class="item-biblio">American Society for Quality. (s. f.). <em>A. V. Feigenbaum</em>. https://asq.org/about-asq/honorary-members/feigenbaum</p>
+      <p class="item-biblio">American Society for Quality. (s. f.). <em>Shewhart Medal</em>. https://asq.org/about-asq/asq-awards/shewhart</p>
+      <p class="item-biblio">American Society for Quality. (s. f.). <em>Walter A. Shewhart</em>. https://asq.org/about-asq/honorary-members/shewhart</p>
+      <p class="item-biblio">Crosby, P. B. (1979). <em>Quality is Free: The Art of Making Quality Certain</em>. McGraw-Hill.</p>
+      <p class="item-biblio">Deming, W. E. (1986). <em>Out of the Crisis</em>. MIT Press.</p>
+      <p class="item-biblio">Feigenbaum, A. V. (1961). <em>Total Quality Control</em>. McGraw-Hill.</p>
+      <p class="item-biblio">Imai, M. (1986). <em>Kaizen: The key to Japan’s competitive success</em>. McGraw-Hill.</p>
+      <p class="item-biblio">Ishikawa, K. (1985). <em>What is Total Quality Control? The Japanese Way</em>. Prentice-Hall.</p>
+      <p class="item-biblio">Juran, J. M. (1951). <em>Quality Control Handbook</em>. McGraw-Hill.</p>
+      <p class="item-biblio">Lean Enterprise Institute. (s. f.). <em>Shingo, Shigeo (1909–1990)</em>. https://www.lean.org/lexicon-terms/shingo-shingeo-1909-1990/</p>
+      <p class="item-biblio">Massachusetts Institute of Technology. (s. f.). <em>Peter M. Senge</em>. MIT Sloan School of Management. https://mitsloan.mit.edu/faculty/directory/peter-m-senge</p>
+      <p class="item-biblio">Pirsig, R. M. (1974). <em>Zen and the Art of Motorcycle Maintenance</em>. William Morrow & Company.</p>
+      <p class="item-biblio">Senge, P. M. (1990). <em>The Fifth Discipline: The Art and Practice of the Learning Organization</em>. Doubleday/Currency.</p>
+      <p class="item-biblio">Shewhart, W. A. (1931). <em>Economic control of quality of manufactured product</em>. D. Van Nostrand Company.</p>
+      <p class="item-biblio">Shingo, S. (1986). <em>Zero Quality Control: Source Inspection and the Poka-Yoke System</em>. Productivity Press.</p>
+      <p class="item-biblio">Taguchi, G. (1986). <em>Introduction to Quality Engineering</em>. Asian Productivity Organization.</p>
+      <p class="item-biblio">The Feigenbaum Foundation. (s. f.). <em>Dr. Armand V. Feigenbaum</em>. https://www.feigenbaumfoundation.org/about/dr-armand-v-feigenbaum/</p>
     </div>
-  `;
+  </div>
+`;
 
-  contenedorLista.appendChild(tarjetaBiblio);
+contenedorLista.appendChild(tarjetaBiblio);
 }
 
 // =============================================================
